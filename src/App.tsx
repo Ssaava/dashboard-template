@@ -1,14 +1,12 @@
-import { Routes, Route } from "react-router-dom";
-import MainLayout from "./layouts/main-layout";
-import DoctorRoutes from "./routes/doctor.routes";
+import { Route, Routes } from "react-router-dom";
+import HomeRoutes from "./routes/home-routes";
+import DashboardRoutes from "./routes/dashboard-routes";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<MainLayout />}></Route>
-
-      <Route path="/doctor/*" element={<DoctorRoutes />} />
-      <Route path="*" element={<p>page not found</p>} />
+      <Route path="/*" element={<HomeRoutes />} />
+      <Route path="/dashboard/*" element={<DashboardRoutes />} />
     </Routes>
   );
 }

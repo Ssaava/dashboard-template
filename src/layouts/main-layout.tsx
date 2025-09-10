@@ -40,7 +40,9 @@ export default function MainLayout() {
             </BreadcrumbList>
           </Breadcrumb>
         </header>
-        <Outlet />
+        <div className="p-4">
+          <Outlet />
+        </div>
       </SidebarInset>
     </SidebarProvider>
   );

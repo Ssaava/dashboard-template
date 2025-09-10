@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/sidebar";
 import type { ReactNode } from "react";
 
-export function NavProjects({
+export function NavGroupLink({
   projects,
 }: {
   projects: {

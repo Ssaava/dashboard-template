@@ -18,9 +18,9 @@ import {
   Settings2,
   SquareTerminal,
 } from "lucide-react";
-import { NavPatient } from "./nav-patient";
-import { NavProjects } from "./nav-projects";
 import { NavUser } from "./nav-user";
+import { NavGroupLink } from "./nav-group-link";
+import { NavDropdownLink } from "./nav-dropdown-link";
 
 // This is sample data.
 const data = {
@@ -157,8 +157,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </div>
       </SidebarHeader>
       <SidebarContent>
-        <NavPatient items={data.patient} />
-        <NavProjects projects={data.projects} />
+        <NavDropdownLink items={data.patient} />
+        <NavGroupLink projects={data.projects} />
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
